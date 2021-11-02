@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { WPPageInfo } from '@faustjs/core';
+import { WPPageInfo } from 'client';
 
 interface NextPageNavigationProps {
   href: string;

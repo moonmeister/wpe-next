@@ -33,19 +33,10 @@ function Header({
             {links?.map((link) => (
               <li key={`${link.label}$-menu`}>
                 <Link href={link.url ?? ''}>
-                  <a href={link.url}>{link.label}</a>
+                  <a href={link.url} className={link.cssClasses.join(" ")}>{link.label}</a>
                 </Link>
               </li>
             ))}
-            <li>
-              <Link href="https://github.com/wpengine/headless-framework">
-                <a
-                  className="button"
-                  href="https://github.com/wpengine/headless-framework">
-                  GitHub
-                </a>
-              </Link>
-            </li>
           </ul>
         </div>
       </div>
